@@ -1,0 +1,19 @@
+<div>
+    <form [formGroup]="articleForm" (ngSubmit)="onSubmit()" action="">
+        <div class="mb-3">
+            <label for="title" class="form-label">Article Title</label>
+            <input type="text" class="form-control" id="title" formControlName="title">
+          </div>
+          <div class="mb-3">
+            <label for="body" class="form-label">Article Body</label>
+            <textarea class="form-control" id="body" rows="3" formControlName="body"></textarea>
+          </div> 
+          <div class="mb-3">
+            <label for="author" class="form-label">Author</label>
+            <input type="email" class="form-control" id="author" formControlName="author">
+          </div> 
+          <div class="mb-3">
+            <button type="submit" class="btn btn-primary">Create new Article</button>
+          </div>
+    </form>
+</div>
